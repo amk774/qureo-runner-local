@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090914"><title>QUREO RUNNER — المساعد التعليمي المحلي</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#"><span class="logo">Q</span><span>QUREO RUNNER</span></a><span class="local"><i></i> يعمل محليًا</span></header>
+<main>
+<section class="hero">
+ <div class="eyebrow">LOCAL LEARNING ENGINE</div>
+ <h1>افهم التمرين، <b>وتعلّم الحل</b></h1>
+ <p>مساعد تدريبي يعمل داخل المتصفح دون إرسال بياناتك إلى Gemini أو أي خدمة ذكاء اصطناعي خارجية.</p>
+ <div class="pills"><span>JavaScript</span><span>Python</span><span>محرك محلي</span></div>
+</section>
+<section class="workspace">
+ <div class="panel">
+  <div class="panel-head"><div><small>01 / EXERCISE</small><h2>أدخل نص السؤال</h2></div><span class="step">التمرين</span></div>
+  <p class="hint">اكتب وصف التمرين أو الصق نصه. لا تحتاج إلى كتابة كود الحل.</p>
+  <textarea id="prompt" placeholder="مثال: اكتب برنامجًا يطبع Hello World&#10;أو: اطبع الأعداد من 1 إلى 10"></textarea>
+  <div class="controls"><label for="language">لغة البرمجة</label><select id="language"><option value="auto">تحديد تلقائي</option><option value="javascript">JavaScript</option><option value="python">Python</option></select><button id="solve">حلّل التمرين</button></div>
+  <div class="notice">المحرك الحالي يدعم مجموعة محددة من أنماط التمارين. إذا لم يتعرّف على السؤال، سيخبرك بدل اختراع إجابة.</div>
+ </div>
+ <div class="panel result" id="result" aria-live="polite">
+  <div class="panel-head"><div><small>02 / RESULT</small><h2>نتيجة التحليل</h2></div><span class="step">المخرجات</span></div>
+  <div id="status" class="empty">اكتب سؤالًا ثم اضغط «حلّل التمرين» لعرض النتيجة هنا.</div>
+  <div id="answer" hidden>
+   <div class="result-label">الفكرة / الحل المقترح</div><pre id="code" dir="ltr"></pre>
+   <div class="result-label">شرح مبسّط</div><p id="explanation"></p>
+   <button class="copy" id="copy">نسخ الحل</button>
+  </div>
+ </div>
+</section>
+<section class="features">
+ <article><span>01</span><h3>محلي</h3><p>المعالجة تتم في ملفات JavaScript داخل المتصفح.</p></article>
+ <article><span>02</span><h3>واضح</h3><p>يعرض سبب اختيار الحل بدل إظهار إجابة مجهولة المصدر.</p></article>
+ <article><span>03</span><h3>قابل للتوسعة</h3><p>يمكن إضافة قواعد جديدة داخل محرك الحل واختبارها.</p></article>
+</section>
+</main>
+<footer>QUREO RUNNER · نسخة أولية محلية · لا تتصل بمنصة QUREO</footer>
+<script src="js/solver-engine.js"></script><script src="js/app.js"></script>
+</body></html>

@@ -1,2 +1,15 @@
-# qureo-runner-local
-A local educational coding assistant for analyzing and solving supported QUREO exercises in JavaScript and Python without external AI APIs.
+# QUREO RUNNER — Local Starter
+
+واجهة عربية تعمل محليًا داخل المتصفح، دون Gemini أو API خارجي.
+
+## التشغيل
+1. فك ضغط الملف.
+2. افتح `index.html` في متصفح حديث.
+3. اكتب وصف التمرين واختر JavaScript أو Python ثم اضغط «حلّل التمرين».
+
+## ملاحظات مهمة
+- هذه نسخة أولية بمحرك قواعد محلي محدود، وليست محللًا عامًا لكل تمارين QUREO.
+- القواعد الحالية تغطي أمثلة بسيطة: Hello World، العد من 1 إلى 10، الجمع، الأعداد الزوجية، ومتغير رقمي.
+- عند عدم التعرف على السؤال، تظهر رسالة واضحة بدل اختراع حل.
+- لا يوجد اتصال بمنصة QUREO، ولا OCR للصور، ولا تنفيذ للكود، ولا تكامل مع حساب الطالب.
+- لإضافة أنماط جديدة، أضف قاعدة اختبارها واضح داخل `js/solver-engine.js`.
